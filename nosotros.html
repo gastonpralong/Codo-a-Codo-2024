@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-a-visible">
+            <i class='bx bx-align-right' id="burger"></i>
+            <div class="nav-item"><a href="principal.html">Home</a></div>
+            <div class="nav-item"><a href="nosotros.html">Nosotros</a></div>
+            <a href="./principal.html"><h1 class="logo">TASTY R🔴LLS SUSHI</h1></a>
+            <div class="nav-item"><a href="menu.html">Menú</a></div>
+            <div class="nav-item"><a href="contacto.html">Contacto</a></div>
+        </nav>
+        <p class="promociones">¡Retirando en nuestro local 20% de descuento sobre el precio total!</p>
+    </header>
+
+    <main>
+        <section class="banner-sobre-nosotros" data-aos="fade" data-aos-duration="1600">
+            <div class="bienvenida">
+                <h1>
+                    SOBRE NOSOTROS
+                </h1>
+        </section>
+
+        <section class="sobre-nosotros" data-aos="fade" data-aos-duration="1600">
+            <p class="historia">"En el vibrante corazón de la ciudad, nació una pasión por la auténtica experiencia gastronómica japonesa.
+                En ese momento, "Tasty Rolls Sushi" abrió sus puertas al mundo con un propósito claro: deleitar los paladares
+                más exigentes con la frescura del mar y la precisión de la tradición culinaria japonesa. <br>
+            A lo largo del tiempo, hemos tenido el privilegio de convertirnos en un destino de confianza para los amantes
+                del sushi en nuestra comunidad. Nos enorgullece ser parte de las celebraciones familiares, las citas románticas
+                y las reuniones de amigos, donde nuestro sushi se convierte en el centro de atención y la fuente de sonrisas y satisfacción."</p>
+        </section>
+
+        <section class="sobre-nosotros">
+            <h2 class="vision" data-aos="fade-left" data-aos-duration="1600">VISIÓN</h2>
+            <p class="visionDescripcion" data-aos="fade" data-aos-duration="1600">En "Tasty Rolls Sushi", aspiramos a ser reconocidos como el referente de excelencia en la experiencia gastronómica japonesa. 
+                Nos esforzamos por cautivar los sentidos de nuestros clientes con la frescura, la calidad y la innovación de nuestros platos,
+                creando así momentos memorables que perduran en la memoria y el paladar. </p>
+        </section>
+
+        <section class="sobre-nosotros">
+            <h2 class="mision" data-aos="fade-right" data-aos-duration="1600">MISIÓN</h2>
+            <p class="misionDescripcion" data-aos="fade" data-aos-duration="1600">Nuestra misión en "Tasty Rolls Sushi" es proporcionar a nuestros clientes una experiencia culinaria excepcional que trascienda las expectativas, en la calidad de nuestros productos e innovación en cada platillo para que cada cliente, sea parte de la familia de Tasty Rolls Sushi.   </p>
+
+        </section>
+
+        <section class="banner-final-sobre-nosotros" data-aos="fade" data-aos-duration="1600">
+            <h2>
+                ¡SUMATE A LA EXPERIENCIA!
+            </h2>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="./principal.html">Home</a></li>
+                    <li><a href="nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="menu.html">Menú</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>                
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="#">+54 11 0048 3599</a></li>
+                    <li><a href="#">TastyRollSushi@gmail.com</a></li>
+                    <li>Plaza Canesa, 328</li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Enterate de nuestras promociones</h3>
+                <form id="subscribeForm" action="#">
+                    <div id="subscribeError" class="error-message"></div>
+                    <label for="nombre" class="label-footer"></label>
+                    <input class="input-footer" type="text" id="subscribeNombre" name="nombre" placeholder="Nombre">
+                    <div id="subscribeNombreError" class="error-message"></div>
+                    <label for="email" class="label-footer"></label>
+                    <input class="input-footer" type="email" name="email" id="subscribeEmail" placeholder="Email">
+                    <div id="subscribeEmailError" class="error-message"></div>
+                    <button class="button-footer" type="submit">Subscribirse</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>TASTY R🔴LLS SUSHI</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-a-visible">
+            <i class='bx bx-align-right' id="burger"></i>
+            <div class="nav-item"><a href="principal.html">Home</a></div>
+            <div class="nav-item"><a href="nosotros.html">Nosotros</a></div>
+            <a href="./principal.html"><h1 class="logo">TASTY R🔴LLS SUSHI</h1></a>
+            <div class="nav-item"><a href="menu.html">Menú</a></div>
+            <div class="nav-item"><a href="contacto.html">Contacto</a></div>
+        </nav>
+        <p class="promocion">¡Retirando en nuestro local 20% de descuento sobre el precio total!</p>
+    </header>
+    <main class="flexContainer">
+        <div class="item">
+            <p>Lorem ipsum<br>dolor sit amet</p>
+        </div>
+        <div class="form-container">
+            <form id="reservationForm" action="formulario" method="post">
+                <h1 id="tituloReserva">Tus datos</h1>
+                <div id="reservationError" class="error-message"></div>
+                <div class="casilla1">
+                    <label for="nombre"></label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                    <div id="nombreError" class="error-message"></div>
+                </div>
+                <div class="casilla1">
+                    <label for="apellido"></label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+                    <div id="apellidoError" class="error-message"></div>
+                </div>
+                <div class="casilla1">
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <div id="emailError" class="error-message"></div>
+                </div>
+                <div class="casilla1">
+                    <label for="motivo"></label>
+                    <select id="motivo" name="motivo">
+                        <option value="Motivo">Motivo...</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="queja">Queja</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <div id="motivoError" class="error-message"></div>
+                </div>
+                <div>
+                    <label for="message"></label>
+                    <textarea name="message" id="message" placeholder="Escriba aquí su mensaje..."></textarea>
+                    <div id="mensajeError" class="error-message"></div>
+                </div>
+                <button type="submit">Reservar</button>
+            </form>
+        </div>
+    </main>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26286.86981141537!2d-58.47148119612078!3d-34.55713217009508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5d3ea07df93%3A0x947b5150d5a5bda4!2sBarrio%20Chino%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1715552560982!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="principal.html">Home</a></li>
+                    <li><a href="nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="menu.html">Menú</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>                
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="#">+54 11 0048 3599</a></li>
+                    <li><a href="#">TastyRollSushi@gmail.com</a></li>
+                    <li>Plaza Canesa, 328</li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Entérate de nuestras promociones</h3>
+                <form id="subscribeForm" action="#">
+                    <div id="subscribeError" class="error-message"></div>
+                    <label for="subscribeNombre" class="label-footer"></label>
+                    <input class="input-footer" type="text" id="subscribeNombre" name="nombre" placeholder="Nombre">
+                    <div id="subscribeNombreError" class="error-message"></div>
+                    <label for="subscribeEmail" class="label-footer"></label>
+                    <input class="input-footer" type="email" id="subscribeEmail" name="email" placeholder="Email">
+                    <div id="subscribeEmailError" class="error-message"></div>
+                    <button class="button-footer" type="submit">Subscribirse</button>
+                </form>
+            </div> 
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+

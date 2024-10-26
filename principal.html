@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style2.css">
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-a-visible">
+            <i class="bx bx-align-right" id="burger"></i>
+            <div class="nav-item"><a href="principal.html">Home</a></div>
+            <div class="nav-item"><a href="nosotros.html">Nosotros</a></div>
+            <a href="./principal.html"><h1 class="logo">TASTY R🔴LLS SUSHI</h1></a>
+            <div class="nav-item"><a href="menu.html">Menú</a></div>
+            <div class="nav-item"><a href="contacto.html">Contacto</a></div>
+        </nav>
+        <p class="promocion">¡Retirando en nuestro local 20% de descuento sobre el precio total!</p>
+    </header>
+    <main>
+        <section class="banner-inicio" data-aos="fade" data-aos-duration="1600">
+            <div class="bienvenida">
+                <p>
+                    Bienvenidos a
+                </p>
+                <h1>
+                    TASTY R🔴LLS SUSHI
+                </h1>
+                <button>Hace tu pedido Acá</button>
+            </div>
+        </section>
+
+
+        <!--Presentación de Producto 1-->
+            
+        <section class="productoNuevo1" data-aos="fade-right" data-aos-duration="800">
+            <div class="freshRoll">
+                <div class="imagenProductoNuevo1">
+                    <img src="img/inicio6.jpeg" alt="Nuevo Fresh Roll Sushi">
+                </div>
+                <div class="descripcionProductoNuevo1">
+                    <h2 class="nuevo">¡NUEVO!</h2>
+                    <h2>FRESH ROLL</h2>
+                    <p> Proba nuestro nuevo roll hecho de salmón ahumado, pepino, palta, queso philadelphia y semillas de sésamo. </p>
+                    <button>PEDIR AHORA</button>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Presentación de Producto 2-->
+
+        <section class="productoNuevo2" data-aos="fade-left" data-aos-duration="800">
+            <div class="redHotRoll">
+                <div class="imagenProductoNuevo2">
+                    <img src="img/inicio1.jpeg" alt="Nuevo Red Hot Roll Sushi">
+                </div>
+                <div class="descripcionProductoNuevo2">
+                    <h2 class="nuevo">¡NUEVO!</h2>
+                    <h2>RED HOT ROLL</h2>
+                    <p>Proba nuestro nuevo roll hecho de salmón ahumado, atún rojo, kanikama, queso philadelphia, pepino, cubierto con una capa de palta y wasabi con huevos de salmón.</p>
+                    <button>PEDIR AHORA</button>    
+                </div>
+            </div>
+        </section>
+
+        <!--Presentación de Producto 3-->
+
+        <section class="productoNuevo3" data-aos="fade-right" data-aos-duration="800">
+            <div class="americanSauce">
+                <div class="imagenProductoNuevo3">
+                    <img src="img/inicio2.jpeg" alt="Nueva American Sauce">
+                </div>
+                <div class="descripcionProductoNuevo3">
+                    <h2 class="nuevo">¡NUEVO!</h2>
+                    <h2>AMERICAN SAUCE</h2>
+                    <p>Proba nuestro nueva salsa agridulce hecha a base de salsa teriyaki, barbacoa ahumada y semillas de sésamo.
+                        Ideal para acompañar tus rolls favoritos.</p>
+                    <button>PEDIR AHORA</button>    
+                </div>
+            </div>
+        </section>
+
+        <!-- Seguinos en Instagram -->
+        <div class="instagram">
+            <h2>SEGUINOS EN INSTAGRAM</h2>
+        <a href="#">@TASTY_ROLLS_SUSHI.AR</a>
+        </div>
+        <div class="imagenes-instagram">
+            <img data-aos="zoom-in" data-aos-duration="900" src="img/inicio3.jpeg" alt="">
+            <img data-aos="zoom-in" data-aos-duration="600" src="img/inicio4.jpeg" alt="">
+            <img data-aos="zoom-in" data-aos-duration="1200" src="img/inicio5.jpeg" alt="">
+        </div>
+
+
+    </main>
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="/principal.html">Home</a></li>
+                    <li><a href="nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="menu.html">Menú</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>                
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="#">+54 11 0048 3599</a></li>
+                    <li><a href="#">TastyRollSushi@gmail.com</a></li>
+                    <li>Plaza Conesa, 328</li>
+                    <a href="index.html"><button class="button-footer" type="submit">Ir a Administración</button></a>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Enterate de nuestras promociones</h3>
+                <form id="subscribeForm" action="#">
+                    <div id="subscribeError" class="error-message"></div>
+                    <label for="nombre" class="label-footer"></label>
+                    <input class="input-footer" type="text" id="subscribeNombre" name="nombre" placeholder="Nombre">
+                    <div id="subscribeNombreError" class="error-message"></div>
+                    <label for="email" class="label-footer"></label>
+                    <input class="input-footer" type="email" name="email" id="subscribeEmail" placeholder="Email">
+                    <div id="subscribeEmailError" class="error-message"></div>
+                    <button class="button-footer" type="submit">Subscribirse</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

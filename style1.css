@@ -1,0 +1,730 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: black;
+}
+
+/* Header */
+header {
+    color: white;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-around;
+    transition: 0.7s;
+}
+
+header p{
+    font-size: 18px;
+    text-align: center;
+    background-color: red;
+    padding: 5px 0px; 
+}
+
+header.abajo {
+    background: black;
+    padding-top: 15px;
+}
+
+header.abajo .logo,
+header.abajo a {
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 20px 0;
+}
+
+
+.nav-item a {
+    color: white;
+    padding: 10px 30px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.7s;
+}
+
+.nav-item a:hover {
+    color: red;
+}
+
+.logo {
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 30px;
+}
+
+#carrito-compras {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: red;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white; 
+    font-size: 40px; 
+}
+
+/* Estilos para el modal del carrito */
+#modalCarrito .modal-content {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background: #fff;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+#modalCarrito .modal-content h2 {
+    margin-bottom: 15px;
+}
+
+#modalCarrito .modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#modalCarrito .modal-content .comprar-ahora {
+    background: #f44336;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#modalCarrito .modal-content .precio-modal {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.carrito-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.carrito-item-info {
+    display: flex;
+    align-items: center;
+}
+
+.carrito-item-info h3 {
+    margin-right: 10px;
+}
+
+.carrito-item-actions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* estilos para contacto.html*/
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 700px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.item {
+    position: relative;
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('img/mahmoud-fawzy-n1DePkKznLY-unsplash.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 1000;
+    color: white;
+    padding: 0 50px;
+    margin-bottom: 25px;
+}
+
+/* Form Container */
+.form-container {
+    margin-top: 50px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tituloReserva {
+    color: red;
+    text-align: left;
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.casilla1 {
+    margin-bottom: 20px;
+    width: 250px;
+    transition: 0.3s ease;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 0.5rem;
+    color: #666;
+    font-size: 0.875rem;
+    text-align: left;
+    width: 100%;
+}
+
+input {
+    all: unset;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: black;
+    border-radius: 0.9375rem;
+    transition: 0.3s ease;
+    color: white;
+}
+
+input:focus {
+    border-color: red;
+}
+
+textarea {
+    all: unset;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: black;
+    border-radius: 0.9375rem;
+    transition: 0.3s ease;
+    color: white;
+}
+
+textarea:focus {
+    border-color: red;
+}
+
+.casilla1 select {
+    all: unset;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: black;
+    border-radius: 0.9375rem;
+    transition: 0.3s ease;
+    color: #666;
+}
+
+.casilla1 select:focus {
+    border-color: red;
+}
+
+
+button {
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff2b2b;
+}
+
+iframe {
+    filter: grayscale(100%) invert(100%);
+    max-height: 50vh;
+}
+
+/* estilos para menu.html */
+.imagen {
+    position: relative;
+    background:
+    linear-gradient( rgba(0,0,0,0.3),rgba(0,0,0,0.3) ),
+    url('img/sushiportada.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 100px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.menu {
+    font-size: 50px;
+    line-height: 80px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin: 0; 
+    text-align: center;
+    position: absolute;
+}
+
+.frase {
+    font-size: 20px;
+    line-height: 1.5; 
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    margin-top: 20px; 
+    padding-top: 30px;
+    font-weight: bold;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+    padding: 50px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+/* Estilos para las tarjetas */
+.card {
+    background-color: #F5F5F5;
+    border: 1px solid #dddddd7c;
+    border-radius: 10px;
+    /* border-end-end-radius: 25px;
+    border-top-left-radius: 25px; */
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 0;
+}
+
+.card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    margin: 0; 
+}
+
+.card h2 {
+    font-size: 20px;
+    margin: 0.5rem 0;
+    padding: 0 20px;
+
+}
+
+.price-button-container {
+    display: flex;
+    flex-direction: initial; 
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    padding: 10px 20px; 
+}
+
+p.precio {
+    font-size: 30px;
+    margin: 10px 0; 
+}
+
+.order-button {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+.order-button:hover {
+    background-color: #ff6161;
+}
+
+/*Modal*/
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5);
+    z-index: 100;
+}
+.modal img {
+    width: 100%;
+    height: auto;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.stars i {
+    color: gold;
+    margin: 0 2px;
+}
+
+.precio-modal {
+    font-size: 1.5em;
+    color: green;
+    margin: 10px 0;
+}
+
+.comprar-ahora,
+.añadir-carro {
+    width: 100%;
+    max-width: 200px;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.comprar-ahora:hover,
+.añadir-carro:hover {
+    background-color: #ff2b2b;
+}
+
+
+/* Footer */
+.footer {
+    background-color: black;
+    background: linear-gradient(to top, rgb(29, 29, 29), rgba(0, 0, 0, 0));
+    color: white;
+    padding: 60px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.link h3 {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.link a {
+    font-size: 16px;
+    color: white;
+    display: block;
+    margin-bottom: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.link a:hover {
+    color: red;
+}
+.input-footer {
+    all: unset;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0);
+    transition: 0.3s ease;
+    color: white; 
+    border: none; 
+    border-bottom: 1px solid white;
+}
+
+.button-footer {
+    all: unset;
+    max-width: 500px;
+    margin: 20px auto;
+    margin-left: 10px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+}
+.button-footer:hover {
+    background-color: red;
+    color: white;
+}
+
+
+/* Estilos para los mensajes de error */
+.error-message {
+    color: red;
+    margin-top: 5px;
+    font-size: 12px;
+    display: none;
+}
+
+/* Media Queries para tablets*/
+@media screen and (max-width: 1023px) {
+    .flexContainer {
+        flex-direction: column;
+        align-items: center;
+        height: max-content;
+    }
+
+    .form-container {
+        width: 90%;
+        order: 2;
+    }
+
+    .item {
+        order: 1;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-item {
+        display: none; 
+    }
+
+    .navbar-a-visible.active {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        text-align: center;
+    }
+
+    .navbar-a-visible.active .nav-item {
+        display: block; 
+        padding: 10px 0; 
+        width: 100%; 
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    header.abajo a {
+        color: white;
+    }
+
+    .navbar-a-visible.active .logo {
+        display: none;
+    }
+
+
+    .logo {
+        color: white;
+        font-size: 27px;
+        font-weight: bold;
+        display: flex;
+        text-align: right;
+        order: -1;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .bx-align-right {
+        display: block;
+        font-size: 35px;
+        margin: 0 10px;
+        color: white;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out;
+        text-align: left;
+        margin-left: auto; 
+    }
+
+    .bx-align-right:hover {
+        color: red;
+    }
+
+    .grid-container {
+        padding: 20px;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .price-button-container {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    p.precio {
+        font-size: 24px;
+    }
+
+    .order-button {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .link,
+    .input-footer,
+    .button-footer {
+        max-width: none; 
+        margin: 10px 0; 
+        text-align: center; 
+    }
+}
+
+/* Media Queries para celulares */
+@media screen and (max-width: 767px) {
+    .grid-container {
+        padding: 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .navbar-a-visible.active {
+        background-color: black;
+    }
+
+    .nav-item {
+        display: none;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-a-visible.active .nav-item {
+        display: block;
+    }
+
+    .nav {
+        align-items: center;
+    }
+
+    .logo {
+        text-align: center;
+        font-size: 23px;
+        font-weight: bold;
+        color: white;
+        display: flex;
+        order: -1;
+    }
+
+    .bx-align-right {
+        font-size: 35px;
+        margin: 0 10px;
+        color: white;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out;
+        text-align: right;
+        margin-left: auto; 
+    }
+
+    .bx-align-right:hover {
+        color: red;
+    }
+
+    .price-button-container {
+        gap: 5px;
+    }
+
+    p.precio {
+        font-size: 20px;
+    }
+}
+
+/* Media Queries para pantallas grandes */
+@media screen and (min-width: 1024px) {
+    #burger {
+        display: none;
+    }
+}

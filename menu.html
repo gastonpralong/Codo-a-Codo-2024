@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>TASTY R🔴LLS SUSHI</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-a-visible">
+            <i class='bx bx-align-right' id="burger"></i>
+            <div class="nav-item"><a href="principal.html">Home</a></div>
+            <div class="nav-item"><a href="nosotros.html">Nosotros</a></div>
+            <a href="./principal.html"><h1 class="logo">TASTY R🔴LLS SUSHI</h1></a>
+            <div class="nav-item"><a href="menu.html">Menú</a></div>
+            <div class="nav-item"><a href="contacto.html">Contacto</a></div>
+        </nav>
+        <p class="promocion">¡Retirando en nuestro local 20% de descuento sobre el precio total!</p>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="imagen">
+                <h1 class="menu">Consulta nuestro Menú</h1>
+            </div>
+        </section>
+
+        <div class="frase">
+            <p>Déjate tentar por alguno de nuestros platos</p>
+        </div>
+
+        <section class="grid-container">
+            <div class="card">
+                <img src="img/sushi1.jpg" alt="Comida 1">
+                <h2>Maki</h2>
+                <div class="price-button-container">
+                    <p class="precio">$350</p>
+                    <button class="order-button" data-modal="modal1">ordenar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/sushi2.jpg" alt="Comida 2">
+                <h2>Nigiri</h2>
+                <div class="price-button-container">
+                    <p class="precio">$450</p>
+                    <button class="order-button" data-modal="modal2">ordenar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/sushi3.jpg" alt="Comida 3">
+                <h2>Onigiri</h2>
+                <div class="price-button-container">
+                    <p class="precio">$500</p>
+                    <button class="order-button" data-modal="modal3">ordenar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/sushi4.jpg" alt="Comida 4">
+                <h2>Uramaki</h2>
+                <div class="price-button-container">
+                    <p class="precio">$350</p>
+                    <button class="order-button" data-modal="modal4">ordenar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/sushi5.jpg" alt="Comida 5">
+                <h2>Uramaki tempura</h2>
+                <div class="price-button-container">
+                    <p class="precio">$400</p>
+                    <button class="order-button" data-modal="modal5">ordenar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/sushi6.jpg" alt="Comida 6">
+                <h2>Nigiri (especial)</h2>
+                <div class="price-button-container">
+                    <p class="precio">$700</p>
+                    <button class="order-button" data-modal="modal6">ordenar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/sushi7.jpg" alt="Comida 7">
+                <h2>Combinado</h2>
+                <div class="price-button-container">
+                    <p class="precio">$900</p>
+                    <button class="order-button" data-modal="modal7">ordenar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/sushi8.jpg" alt="Comida 8">
+                <h2>Maki (especial)</h2>
+                <div class="price-button-container">
+                    <p class="precio">$600</p>
+                    <button class="order-button" data-modal="modal8">ordenar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/sushi9.jpg" alt="Comida 9">
+                <h2>Kimbap</h2>
+                <div class="price-button-container">
+                    <p class="precio">$400</p>
+                    <button class="order-button" data-modal="modal9">ordenar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/sushi10.jpg" alt="Comida 10">
+                <h2>Nigiri de atún</h2>
+                <div class="price-button-container">
+                    <p class="precio">$400</p>
+                    <button class="order-button" data-modal="modal10">ordenar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="img/sushi1.jpg" alt="Comida 1">
+            <h2>Maki</h2>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, maxime?</p>
+            <p class="precio-modal">$350</p>
+            <button class="comprar-ahora">Comprar Ahora</button>
+            <button class="añadir-carro">Añadir al Carrito</button>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="img/sushi2.jpg" alt="Comida 2">
+            <h2>Nigiri</h2>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, maxime?</p>
+            <p class="precio-modal">$450</p>
+            <button class="comprar-ahora">Comprar Ahora</button>
+            <button class="añadir-carro">Añadir al Carrito</button>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="img/sushi3.jpg" alt="Comida 3">
+            <h2>Onigiri</h2>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, maxime?</p>
+            <p class="precio-modal">$500</p>
+            <button class="comprar-ahora">Comprar Ahora</button>
+            <button class="añadir-carro">Añadir al Carrito</button>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="img/sushi4.jpg" alt="Comida 4">
+            <h2>Uramaki</h2>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, maxime?</p>
+            <p class="precio-modal">$350</p>
+            <button class="comprar-ahora">Comprar Ahora</button>
+            <button class="añadir-carro">Añadir al Carrito</button>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="img/sushi5.jpg" alt="Comida 5">
+            <h2>Uramaki tempura</h2>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, maxime?</p>
+            <p class="precio-modal">$400</p>
+            <button class="comprar-ahora">Comprar Ahora</button>
+            <button class="añadir-carro">Añadir al Carrito</button>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="img/sushi6.jpg" alt="Comida 6">
+            <h2>Nigiri (especial)</h2>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, maxime?</p>
+            <p class="precio-modal">$700</p>
+            <button class="comprar-ahora">Comprar Ahora</button>
+            <button class="añadir-carro">Añadir al Carrito</button>
+        </div>
+    </div>
+
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="img/sushi7.jpg" alt="Comida 7">
+            <h2>Combinado</h2>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, maxime?</p>
+            <p class="precio-modal">$900</p>
+            <button class="comprar-ahora">Comprar Ahora</button>
+            <button class="añadir-carro">Añadir al Carrito</button>
+        </div>
+    </div>
+
+    <div id="modal8" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="img/sushi8.jpg" alt="Comida 8">
+            <h2>Maki (especial)</h2>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, maxime?</p>
+            <p class="precio-modal">$600</p>
+            <button class="comprar-ahora">Comprar Ahora</button>
+            <button class="añadir-carro">Añadir al Carrito</button>
+        </div>
+    </div>
+    
+    <!-- Modal 9 -->
+    <div id="modal9" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="img/sushi9.jpg" alt="Comida 9">
+            <h2>Kimbap</h2>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, maxime?</p>
+            <p class="precio-modal">$400</p>
+            <button class="comprar-ahora">Comprar Ahora</button>
+            <button class="añadir-carro">Añadir al Carrito</button>
+        </div>
+    </div>
+    
+    <!-- Modal 10 -->
+    <div id="modal10" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="img/sushi10.jpg" alt="Comida 10">
+            <h2>Nigiri de atún</h2>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, maxime?</p>
+            <p class="precio-modal">$400</p>
+            <button class="comprar-ahora">Comprar Ahora</button>
+            <button class="añadir-carro">Añadir al Carrito</button>
+        </div>
+    </div>
+
+    <div id="carrito-compras">
+        <i class='bx bx-cart-alt bx-tada'></i>
+    </div>
+
+    <!-- Modal del Carrito -->
+    <div id="modalCarrito" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <table id="tablaCarrito">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Total</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se agregarán los productos dinámicamente -->
+                </tbody>
+            </table>
+            <div class="precio-modal">
+                Total: <span id="totalCarrito">0</span>
+            </div>
+            <button class="comprar-ahora">Comprar Ahora</button>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="principal.html">Home</a></li>
+                    <li><a href="nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="menu.html">Menú</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>                
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="#">+54 11 0048 3599</a></li>
+                    <li><a href="#">TastyRollSushi@gmail.com</a></li>
+                    <li>Plaza Canesa, 328</li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>Entérate de nuestras promociones</h3>
+                <form id="subscribeForm" action="#">
+                    <div id="subscribeError" class="error-message"></div>
+                    <label for="subscribeNombre" class="label-footer"></label>
+                    <input class="input-footer" type="text" id="subscribeNombre" name="nombre" placeholder="Nombre">
+                    <div id="subscribeNombreError" class="error-message"></div>
+                    <label for="subscribeEmail" class="label-footer"></label>
+                    <input class="input-footer" type="email" id="subscribeEmail" name="email" placeholder="Email">
+                    <div id="subscribeEmailError" class="error-message"></div>
+                    <button class="button-footer" type="submit">Subscribirse</button>
+                </form>
+            </div>            
+        </div>
+    </footer>
+    
+    <script src="index.js"></script>
+    </body>
+    </html>
+
+
+
+
+
+
+    

@@ -1,0 +1,932 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    height: 100;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #ffffff;
+  }
+
+/* Header */
+header {
+    color: white;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-around;
+    transition: 0.7s;
+}
+
+header p{
+    font-size: 18px;
+    text-align: center;
+    background-color: red;
+    padding: 5px 0px; 
+}
+
+header.abajo {
+    background: black;
+    padding-top: 15px;
+}
+
+header.abajo .logo,
+header.abajo a {
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 20px 0px;
+}
+
+
+.nav-item a {
+    color: white;
+    padding: 10px 30px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.7s;
+}
+
+.nav-item a:hover {
+    color: red;
+}
+
+.logo {
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 30px;
+}
+
+
+.banner-inicio{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/inicio7.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bienvenida {
+    color:#ffffff;
+    font-size: 45px;
+    margin: 40px;
+    text-align: center;
+}
+.bienvenida h1 {
+    font-weight: 900;
+    margin: 20px;
+}
+
+button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    transition: all 0.5s ease;
+}
+  
+button:hover {
+    letter-spacing: 3px;
+    background-color: red;
+    color: hsl(0, 0%, 100%);
+    box-shadow: red;
+}
+  
+button:active {
+    letter-spacing: 3px;
+    background-color: red;
+    color: hsl(0, 0%, 100%);
+    box-shadow: red;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+
+
+
+.productoNuevo1 .freshRoll {
+    display: flex;
+    margin: 50px 150px;
+    align-items: center;
+  }
+
+
+.productoNuevo1 .freshRoll .imagenProductoNuevo1 img {
+    border-radius: 5%;
+    width: 500px;
+    height: 700px;
+  }
+  
+.productoNuevo1 .freshRoll .descripcionProductoNuevo1 {
+    padding: 50px;
+    text-align: left;
+  }
+
+.productoNuevo1 .freshRoll .descripcionProductoNuevo1 .nuevo {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+
+  .productoNuevo1 .freshRoll .descripcionProductoNuevo1 h2 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .productoNuevo1 .freshRoll .descripcionProductoNuevo1 p {
+    color: white;
+    margin-bottom: 40px;
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+  
+
+
+.productoNuevo2 .redHotRoll {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 50px 150px;
+    align-items: center;
+  }
+
+
+.productoNuevo2 .redHotRoll .imagenProductoNuevo2 img {
+    border-radius: 5%;
+    width: 500px;
+    height: 700px;
+  }
+
+  
+  .productoNuevo2 .redHotRoll .descripcionProductoNuevo2 {
+    padding: 50px;
+    text-align: right;
+  }
+
+  .productoNuevo2 .redHotRoll .descripcionProductoNuevo2 .nuevo {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+
+  .productoNuevo2 .redHotRoll .descripcionProductoNuevo2 h2 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .productoNuevo2 .redHotRoll .descripcionProductoNuevo2 p {
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+
+
+.productoNuevo3 .americanSauce {
+    display: flex;
+    margin: 50px 150px;
+    align-items: center;
+  }
+
+
+.productoNuevo3 .americanSauce .imagenProductoNuevo3 img {
+    border-radius: 5%;
+    width: 500px;
+    height: 700px;
+  }
+  
+  .productoNuevo3 .americanSauce .descripcionProductoNuevo3 {
+    text-align: left;
+    padding: 50px;
+  }
+  
+.productoNuevo3 .americanSauce .descripcionProductoNuevo3 .nuevo {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+
+  .productoNuevo3 .americanSauce .descripcionProductoNuevo3 h2 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .productoNuevo3 .americanSauce .descripcionProductoNuevo3 p {
+    color: white;
+    margin-bottom: 40px;
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+  
+
+  /* Seguinos en Instagram */
+  .instagram{
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .instagram h2{
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+
+  .instagram a{
+    transition: 0.7s;
+  }
+
+  .instagram a:hover{
+    color: red;
+  }
+
+  .imagenes-instagram {
+    display: flex;
+    justify-content: center;
+    margin: 70px 50px;
+  }
+
+  .imagenes-instagram img {
+    width: 300px;
+    height: 500px;
+    border-radius: 5%;
+    margin: 0px 50px;
+    display: block;
+    object-fit: cover;
+  }
+
+
+/* SOBRE NOSOTROS */
+
+.banner-sobre-nosotros {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/nosotros1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-nosotros .historia{
+  text-align: center;
+  font-style: italic;
+  padding: 100px 200px;
+  margin: 50px 0px;
+}
+
+.sobre-nosotros .visionDescripcion{
+  text-align: left;
+  padding: 100px 200px;
+  margin: 100px 0px;
+}
+
+.sobre-nosotros .misionDescripcion{
+    text-align: right;
+    padding: 100px 200px;
+    margin: 100px 0px;
+}
+
+.sobre-nosotros p{
+    display: flex;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+.vision{
+    background-color: darkred;
+    color: #ffffff;
+    display: flex;
+    justify-content: start;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 10px 0px 10px 200px;
+}
+
+.mision{
+    background-color: darkred;
+    display: flex;
+    justify-content: end;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 10px 200px 10px 0px;
+}
+
+.banner-final-sobre-nosotros{
+  width: 100%;
+  height: 80vh;
+  border-radius: 50px;
+  background-image: url(img/nosotros3.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 100px;
+}
+
+.banner-final-sobre-nosotros h2{
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 900;
+  margin: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    background: linear-gradient(to top, rgb(29, 29, 29), rgba(0, 0, 0, 0));
+    color: white;
+    padding: 60px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.link h3 {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.link a {
+    font-size: 16px;
+    color: white;
+    display: block;
+    margin-bottom: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.link a:hover {
+    color: red;
+}
+.input-footer {
+    all: unset;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0);
+    transition: 0.3s ease;
+    color: white; 
+    border: none; 
+    border-bottom: 1px solid white;
+}
+
+
+
+.button-footer {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    transition: all 0.5s ease;
+}
+
+
+@media screen and (max-width: 767px) {
+  
+  
+.grid-container {
+    padding: 20px;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-item {
+  display: none; 
+}
+
+.navbar-a-visible.active {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  text-align: center;
+}
+
+.navbar-a-visible.active .nav-item {
+  display: block; 
+  padding: 10px 0px; 
+  width: 100%; 
+}
+
+.nav {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+header.abajo a {
+  color: white;
+}
+
+.navbar-a-visible.active .logo {
+  display: none;
+}
+
+
+.logo {
+  color: white;
+  font-size: 27px;
+  font-weight: bold;
+  display: flex;
+  text-align: right;
+  order: -1;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.bx-align-right {
+  display: block;
+  font-size: 35px;
+  margin: 0px 10px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  text-align: left;
+  margin-left: auto; 
+}
+
+.bx-align-right:hover {
+  color: red;
+}
+
+.grid-container {
+  padding: 20px;
+  grid-template-columns: repeat(2, 1fr); 
+}
+
+  .footer-content {
+      flex-direction: column;
+      align-items: center; 
+  }
+
+  .link,
+  .input-footer,
+  .button-footer {
+      max-width: none; 
+      margin: 10px 0; 
+      text-align: center; 
+  }
+
+
+
+  .productoNuevo1 .freshRoll {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 50px;
+    align-items: center;
+  }
+
+  .productoNuevo1 .freshRoll .imagenProductoNuevo1 img {
+    width: 300px;
+    height: 400px;
+  }
+  .productoNuevo1 .freshRoll .descripcionProductoNuevo1 {
+    padding: 20px 40px;
+    text-align: center;
+  }
+  
+    .productoNuevo1 .freshRoll .descripcionProductoNuevo1 {
+      padding: 10px 5px;
+    }
+  
+  .productoNuevo1 .freshRoll .descripcionProductoNuevo1 .nuevo {
+    font-size: 24px;
+    margin-bottom: 2px;
+  }
+  
+    .productoNuevo1 .freshRoll .descripcionProductoNuevo1 h2 {
+      font-size: 24px;
+      margin-bottom: 2px;
+    }
+  
+    .productoNuevo1 .freshRoll .descripcionProductoNuevo1 p {
+      font-size: 16px;
+    }
+    
+    button {
+      padding: 15px 30px;
+      font-size: 15px;
+      font-weight: 600;
+  }
+
+
+
+  .productoNuevo2 .redHotRoll {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 50px;
+    align-items: center;
+  }
+
+    .productoNuevo2 .redHotRoll .imagenProductoNuevo2 img {
+    width: 300px;
+    height: 400px;
+  }
+  .productoNuevo2 .redHotRoll .descripcionProductoNuevo2 {
+    padding: 20px 40px;
+    text-align: center;
+  }
+  
+    .productoNuevo2 .redHotRoll .descripcionProductoNuevo2 {
+      padding: 10px 5px;
+    }
+  
+  .productoNuevo2 .redHotRoll .descripcionProductoNuevo2 .nuevo {
+    font-size: 24px;
+    margin-bottom: 2px;
+  }
+  
+    .productoNuevo2 .redHotRoll .descripcionProductoNuevo2 h2 {
+      font-size: 24px;
+      margin-bottom: 2px;
+    }
+  
+    .productoNuevo2 .redHotRoll .descripcionProductoNuevo2 p {
+      font-size: 16px;
+    }
+
+    
+
+    .productoNuevo3 .americanSauce {
+      display: flex;
+      flex-direction: column;
+      margin: 25px 50px;
+      align-items: center;
+    }  
+
+    .productoNuevo3 .americanSauce .imagenProductoNuevo3 img {
+      width: 300px;
+      height: 400px;
+    }
+    .productoNuevo3 .americanSauce .descripcionProductoNuevo3 {
+      padding: 20px 40px;
+      text-align: center;
+    }
+    
+      .productoNuevo3 .americanSauce .descripcionProductoNuevo3 {
+        padding: 10px 5px;
+      }
+    
+    .productoNuevo3 .americanSauce .descripcionProductoNuevo3 .nuevo {
+      font-size: 24px;
+      margin-bottom: 2px;
+    }
+    
+      .productoNuevo3 .americanSauce .descripcionProductoNuevo3 h2 {
+        font-size: 24px;
+        margin-bottom: 2px;
+      }
+    
+      .productoNuevo3 .americanSauce .descripcionProductoNuevo3 p {
+        font-size: 16px;
+      }
+
+    
+
+      .imagenes-instagram {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: 70px 50px;
+      }
+
+      .imagenes-instagram img {
+        margin: 15px 0px;
+      }
+
+      
+      
+      .banner-sobre-nosotros {
+        background-image: url(img/nosotros2.jpeg);
+      }
+      
+      .bienvenida {
+        font-size: 32px;
+        font-weight: 800;
+      }
+
+      .sobre-nosotros .historia{
+        padding: 10px 20px;
+        margin: 50px 0px;
+        font-size: 20px;
+        letter-spacing: 2px;
+      }
+      
+      .sobre-nosotros .visionDescripcion{
+        text-align: center;
+        padding: 10px 20px;
+        margin: 50px 0px;
+      }
+      
+      .sobre-nosotros .misionDescripcion{
+          text-align: center;
+          padding: 10px 20px;
+          margin: 50px 0px;
+      }
+      
+      .sobre-nosotros p{
+          font-size: 20px;
+          letter-spacing: 2px;
+      }
+      
+      .vision{
+          font-size: 24px;
+          padding: 10px 0px 10px 40px;
+      }
+      
+      .mision{
+          font-size: 24px;
+          padding: 10px 40px 10px 0px;
+      }
+      
+      .banner-final-sobre-nosotros{
+        height: 100vh;
+        border-radius: 20px;
+      }
+      
+      .banner-final-sobre-nosotros h2{
+        font-size: 32px;
+      }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  
+
+  .flexContainer {
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+}
+
+.form-container {
+    width: 90%;
+    order: 2;
+}
+
+.item {
+    order: 1;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item {
+    display: none; 
+}
+
+.navbar-a-visible.active {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    text-align: center;
+}
+
+.navbar-a-visible.active .nav-item {
+    display: block; 
+    padding: 10px 0px; 
+    width: 100%; 
+}
+
+.nav {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+header.abajo a {
+    color: white;
+}
+
+.navbar-a-visible.active .logo {
+    display: none;
+}
+
+
+.logo {
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    display: flex;
+    text-align: right;
+    order: -1;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.bx-align-right {
+    display: block;
+    font-size: 35px;
+    margin: 0px 10px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+    text-align: left;
+    margin-left: auto; 
+}
+
+.bx-align-right:hover {
+    color: red;
+}
+
+.grid-container {
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr); 
+}
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .link,
+    .input-footer,
+    .button-footer {
+        max-width: none; 
+        margin: 10px 0px; 
+        text-align: center; 
+    }
+  
+
+.productoNuevo1 .freshRoll {
+    margin: 50px;
+  }
+
+
+.productoNuevo1 .freshRoll .imagenProductoNuevo1 img {
+    width: 300px;
+    height: 500px;
+  }
+  
+.productoNuevo1 .freshRoll .descripcionProductoNuevo1 {
+    padding: 50px;
+  }
+  
+
+
+.productoNuevo2 .redHotRoll {
+    margin: 50px;
+  }
+
+
+.productoNuevo2 .redHotRoll .imagenProductoNuevo2 img {
+    width: 300px;
+    height: 500px;
+  }
+
+  
+  .productoNuevo2 .redHotRoll .descripcionProductoNuevo2 {
+    padding: 50px;
+  }
+
+
+
+.productoNuevo3 .americanSauce {
+    margin: 50px;
+  }
+
+
+.productoNuevo3 .americanSauce .imagenProductoNuevo3 img {
+    width: 300px;
+    height: 500px;
+  }
+  
+  .productoNuevo3 .americanSauce .descripcionProductoNuevo3 {
+    padding: 50px;
+  }
+  
+  /* Seguinos en Instagram */
+
+  .imagenes-instagram img {
+    width: 200px;
+    height: 400px;
+    margin: 0px 20px;
+  }
+
+
+/* SOBRE NOSOTROS */
+
+.sobre-nosotros .historia{
+  padding: 50px;
+}
+
+.sobre-nosotros .visionDescripcion{
+  text-align: center;
+  padding: 50px;
+  margin: 50px 0px;
+}
+
+.sobre-nosotros .misionDescripcion{
+    text-align: center;
+    padding: 50px;
+    margin: 50px 0px;
+}
+
+.sobre-nosotros p{
+    letter-spacing: 2px;
+}
+
+.vision{
+    padding: 10px 0px 10px 40px;
+}
+
+.mision{
+    padding: 10px 40px 10px 0px;
+}
+
+.banner-final-sobre-nosotros h2{
+  text-align: center;
+}
+}
+
+/* Media Queries para pantallas grandes */
+@media screen and (min-width: 1000px) {
+  #burger {
+      display: none;
+  }
+}
